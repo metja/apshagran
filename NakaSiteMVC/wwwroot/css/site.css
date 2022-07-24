@@ -1,0 +1,181 @@
+﻿*{
+    margin: 0;
+    padding:0;
+}
+a {
+    padding: 0;
+}
+
+body {
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+
+@font-face {
+    font-family: 'Orelega One';
+    src: url('/OrelegaOne-Regular.ttf');
+}
+
+
+.fab {
+    color: #7A3803;
+}
+
+.fa-whatsapp, .fa-viber, .fa-instagram, .fa-facebook-square {
+    font-size: 25px;
+}
+
+.contact {
+    font-family: 'Orelega One';
+    font-size: 15px;
+    font-weight: 100;
+    color: #fff;
+    z-index: 2;
+    letter-spacing: 1px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+
+.nav-link {
+    font-family: 'Orelega One';
+    font-size: 25px;
+    font-weight: 200;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+
+
+    .nav-link:hover {
+
+        color: #7A3803;
+
+    }
+
+        .fa-map-marker-alt {
+            font-size: 40px;
+        }
+
+        
+
+.fa-sketch {
+    color: #7A3803;
+}
+
+.fa-bars{
+    color: #fff;
+}
+
+.fa-envelope {
+    color: #7A3803;
+}
+
+.fa-phone-alt {
+    color: #7A3803;
+}
+
+.dropdown-menu {
+    border-color: #000;
+}
+
+.dropdown-item {
+    font-family: 'Orelega One';
+    font-weight: 200;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.footer_main{
+    background-color: #EEEEEE;
+}
+
+    .footer_item_company{
+        font-family: 'Orelega One';
+        font-size: 15px;
+        font-weight: 200;
+        color: #000
+    }
+
+.footer_main > .footer_item > a > .fab{
+    font-size: 35px;
+}
+
+.footer_main > .footer_item > .footer_stone {
+    list-style: none;
+}
+
+.footer_stone_header {
+    font-family: 'Orelega One';
+    font-size: 30px;
+    font-weight: 400;
+    color: #000;
+}
+
+
+
+
+
+@media screen and (max-width: 1366px){
+
+
+
+}
+
+    @media screen and (max-width: 768px) {
+        .logo {
+            width: 90px;
+            height: 50px;
+        }
+
+        .contact {
+            font-size: 15px;
+        }
+
+        .dropdown-menu {
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        .footer_stone_header{
+            font-size: 20px;
+        }
+
+        .footer_stone_item{
+            font-size: 15px;
+        }
+
+        .dropdown-item:hover {
+            background-color: #555;
+        }
+        .nav-link{
+            font-size: 20px;
+        }
+
+    }
+
+    @media screen and (max-width: 767px){
+        .footer_main > .g_map > iframe {
+            display: none;
+        }
+
+        .footer_item_company{
+            font-size: 12px;
+        }
+
+        .fa-whatsapp, .fa-viber, .fa-instagram, .fa-facebook-square {
+            font-size: 20px;
+        }
+    }    
+    
+
+

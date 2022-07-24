@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ApshaGran - вироби з граніту, мрамору та кварциту</title>
+    <link rel="icon" href="~/image/Dribbble shot - 4.png" /> 
+    <link rel="stylesheet" href="~/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/home.css" />
+</head>
+
+
+<body>
+    <nav class="navbar navbar-default navbar-expand-xl" style="background-color:rgba(255, 255, 255, 0.3)">
+        <a asp-action="Index" asp-controller="Home" class="navbar-brand pl-3 flex-fill">
+            <img src="~/image/Dribbble shot - 4.png" width="130" height="90" class="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <ul class="nav fa-pull-right justify-content-center pr-3 pl-3 ">
+
+                <li class="nav-item dropdown text-center  pr-3 pl-3 pt-1 ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Каталог каменю
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item mt-1 mb-1" asp-controller="MaterialGalery" asp-action="UaStone">
+                            <i class="fab fa-sketch"></i>
+                            Український граніт
+                        </a>
+                        <a class="dropdown-item mt-1 mb-1" asp-controller="MaterialGalery" asp-action="ImpStone">
+                            <i class="fab fa-sketch"></i>
+                            Імпортний граніт
+                        </a>
+                        <a class="dropdown-item mt-1 mb-1" asp-controller="MaterialGalery" asp-action="Marmur">
+                            <i class="fab fa-sketch"></i>
+                            Мрамур
+                        </a>
+                        <a class="dropdown-item mt-1 mb-1" asp-controller="MaterialGalery" asp-action="Kvarz">
+                            <i class="fab fa-sketch"></i>
+                            Кварцит
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown text-center  pr-3 pl-3 ">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Галерея виробів
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item mt-1 mb-1 " asp-controller="ProductGalery" asp-action="Pidvikonniki">
+                            <i class="fab fa-sketch"></i>
+                            Підвіконки
+                        </a>
+                        <a class="dropdown-item mt-1 mb-1" asp-controller="ProductGalery" asp-action="Parkany">
+                            <i class="fab fa-sketch"></i>
+                            Паркани
+                        </a>
+                        <a class="dropdown-item" asp-controller="ProductGalery" asp-action="Stilnici">
+                            <i class="fab fa-sketch"></i>
+                            Стільниці
+                        </a>
+                        <a class="dropdown-item mt-1 mb-1" asp-controller="ProductGalery" asp-action="Garadychi">
+                            <i class="fab fa-sketch"></i>
+                            Сходи
+                        </a>
+                        <a class="dropdown-item mt-1 mb-1" asp-controller="ProductGalery" asp-action="Dvory">
+                            <i class="fab fa-sketch"></i>
+                            Подвір'я
+                        </a>
+                        <a class="dropdown-item mt-1 mb-1" asp-controller="ProductGalery" asp-action="Tables">
+                            <i class="fab fa-sketch"></i>
+                            Столи
+                        </a>
+                        <a class="dropdown-item mt-1 mb-1" asp-controller="ProductGalery" asp-action="Fundamenty">
+                            <i class="fab fa-sketch"></i>
+                            Фундамент
+                        </a>
+                    </div>
+                </li>
+                <li class="nav-item text-center pr-3 pl-3 pb-1">
+                    <a class="nav-link" asp-controller="About" asp-action="About">Про&nbsp;нас</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <main role="main" class="pb-3 flex">
+        @RenderBody()
+    </main>
+
+    <footer class="border-top border-dark footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="footer_main d-flex  col-12">
+                    <div class="footer_item d-flex align-items-center justify-content-center col-sm-2 col-md-4 col-lg-4 col-xl-4">
+                        <div class="footer_content">
+                            <a asp-action="Index" asp-controller="Home" class="navbar-brand pl-3">
+                                <img src="~/image/Frame 1.png" width="110" height="70" class="logo " />
+
+                            </a>
+                            <div class="footer_item_company">&copy;2021 - ApshaGran</div>
+
+                        </div>
+                    </div>
+
+                    <div class="g_map d-flex align-items-center justify-content-around col-4"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52103.89411495572!2d23.802952417631577!3d48.01094859897684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4737a2d0a8a0483f%3A0x14a2d4ac496add21!2z0J3QuNC20L3Rj9GPINCQ0L_RiNCwLCDQl9Cw0LrQsNGA0L_QsNGC0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e1!3m2!1sru!2sua!4v1636749055389!5m2!1sru!2sua" width="400" height="150" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+
+                    <div class="footer_item d-flex justify-content-center align-items-center col-sm-10 col-md-4 col-lg-4 col-xl-4">
+                        <div class="footer_item">
+                            <a><i class="fab fa-viber p-2"></i></a>
+                            <a href="https://instagram.com/apshagran?utm_medium=copy_link"> <i class="fab fa-instagram p-2"></i></a>
+                            <a><i class="fab fa-facebook-square p-2"></i></a>
+                            <a><i class="fab fa-whatsapp p-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+
+
+
+</html>

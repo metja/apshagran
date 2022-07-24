@@ -1,0 +1,243 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<section>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="~/image/stilnici/k4.jpg" />
+            <div class="carousel-caption">
+                <h4>Вироби з граніту, мрамору та кварциту</h4>
+                <p4>Ми виготовляємо вироби різної складності, завдяки 10-ти річному досвіду роботи</p4>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="content col-12 text-center my-5">
+                <h6>Види каменю</h6>
+            </div>
+            <div class="stoun_list col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <a asp-controller="MaterialGalery" asp-action="UaStone">
+                    <img class="img-fluid" alt="" src="~/image/materials/jatkovka2.jpg" />
+                    <div class="caption text-center">
+                        <h2>Жатківка</h2>
+                        <p6>Український грантіт</p6>
+                    </div>
+                </a>
+            </div>
+            <div class="stoun_list  col-sm-12 col-md-6 col-lg-3 col-xl-3">
+                <a asp-controller="MaterialGalery" asp-action="ImpStone">
+                    <img class="img-fluid" alt="" src="~/image/materials/newwiscount.jpg" />
+                    <div class="caption text-center">
+                        <h2>New Wiscount</h2>
+                        <p6>Імпортний грантіт</p6>
+                    </div>
+                </a>
+            </div>
+            <div class="stoun_list col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 p-3">
+                <a asp-controller="MaterialGalery" asp-action="Marmur">
+                    <img class="img-fluid" alt="" src="~/image/materials/orosei.jpg" />
+                    <div class="caption text-center">
+                        <h2>Orosei</h2>
+                        <p6>Мрамур</p6>
+                    </div>
+                </a>
+            </div>
+            <div class="stoun_list col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 p-3">
+                <a asp-controller="MaterialGalery" asp-action="Kvarz">
+                    <img class="img-fluid" alt="" src="~/image/materials/kvarc_gray.jpg" />
+                    <div class="caption text-center">
+                        <h2>Gray</h2>
+                        <p6>Кварцит</p6>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 d-flex px-5  justify-content-end">
+                <div class="catalog">
+                    <a class="catalog_item mt-5 dropdown-toggle justify-content-end" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Каталог каменю
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item my-1" asp-controller="MaterialGalery" asp-action="UaStone">
+                            <i class="fab fa-sketch"></i>
+                            Український граніт
+                        </a>
+                        <a class="dropdown-item my-1" asp-controller="MaterialGalery" asp-action="ImpStone">
+                            <i class="fab fa-sketch"></i>
+                            Імпортний граніт
+                        </a>
+                        <a class="dropdown-item my-1" asp-controller="MaterialGalery" asp-action="Marmur">
+                            <i class="fab fa-sketch"></i>
+                            Мрамур
+                        </a>
+                        <a class="dropdown-item my-1" asp-controller="MaterialGalery" asp-action="Kvarz">
+                            <i class="fab fa-sketch"></i>
+                            Кварцит
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row contect_contact col-12 my-5 mx-0">
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="contact text-center py-5">
+                        <ul>
+                            Наші контакти:
+                            <li class="contact_item p-2"><i class="fas fa-phone-alt p-2"></i>+380978552687</li>
+                            <li class="contact_item p-2"><i class="fas fa-phone-alt p-2"></i>+380683038014</li>
+                            <li class="contact_item p-2"><i class="fas fa-phone-alt p-2"></i>+380976838585</li>
+                        </ul>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <div class="h_work text-center py-5">
+                        <ul>
+                            Графік роботи:
+                            <li class="h_work_item p-2"><i class="far fa-calendar-alt p-2"></i>Пн - Сб</li>
+                            <li class="h_work_item p-2"><i class="far fa-clock p-2"></i>09:00 - 21:00</li>
+                            <li class="h_work_item p-2"><i class="far fa-calendar-alt p-2"></i>Нд - вихідний</li>
+                        </ul>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="content col-12 text-center my-5">
+                <h6>Наші вироби</h6>
+            </div>
+            <div class="stoun_list col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 p-3">
+                <a asp-controller="ProductGalery" asp-action="Parkany">
+                    <img class="img-fluid" alt="" src="~/image/parkany/i30.jpg" />
+                    <div class="caption text-center">
+                        <h2>Paradis</h2>
+                        <p6>Паркан</p6>
+                    </div>
+                </a>
+            </div>
+
+            <div class="stoun_list col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 p-3">
+                <a asp-controller="ProductGalery" asp-action="Parkany">
+                    <img class="img-fluid" alt="" src="~/image/dvody/4.jpg" />
+                    <div class="caption text-center">
+                        <h2>Жатківка</h2>
+                        <p4>Подвір'я</p4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="stoun_list col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 p-3">
+                <a asp-controller="ProductGalery" asp-action="Parkany">
+                    <img class="img-fluid" alt="" src="~/image/garadychi/m38.jpg" />
+                    <div class="caption text-center">
+                        <h2>Karara</h2>
+                        <p6>Сходи</p6>
+                    </div>
+                </a>
+            </div>
+
+            <div class="stoun_list col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 p-3">
+                <a asp-controller="ProductGalery" asp-action="Parkany">
+                    <img class="img-fluid" alt="" src="~/image/parkany/u4.jpg" />
+                    <div class="caption text-center">
+                        <h2>Межерічка</h2>
+                        <p4>Паркан</p4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 d-flex px-5  justify-content-end">
+                <div class="catalog">
+                    <a class="catalog_item mt-5 dropdown-toggle justify-content-end" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Галерея виробів
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item mt-1 mb-1 " asp-controller="ProductGalery" asp-action="Pidvikonniki">
+                            <i class="fab fa-sketch"></i>
+                            Підвіконки
+                        </a>
+                        <a class="dropdown-item mt-1 mb-1" asp-controller="ProductGalery" asp-action="Parkany">
+                            <i class="fab fa-sketch"></i>
+                            Паркани
+                        </a>
+                        <a class="dropdown-item" asp-controller="ProductGalery" asp-action="Stilnici">
+                            <i class="fab fa-sketch"></i>
+                            Стільниці
+                        </a>
+                        <a class="dropdown-item mt-1 mb-1" asp-controller="ProductGalery" asp-action="Garadychi">
+                            <i class="fab fa-sketch"></i>
+                            Сходи
+                        </a>
+                        <a class="dropdown-item mt-1 mb-1" asp-controller="ProductGalery" asp-action="Dvory">
+                            <i class="fab fa-sketch"></i>
+                            Подвір'я
+                        </a>
+                        <a class="dropdown-item mt-1 mb-1" asp-controller="ProductGalery" asp-action="Tables">
+                            <i class="fab fa-sketch"></i>
+                            Столи
+                        </a>
+                        <a class="dropdown-item mt-1 mb-1" asp-controller="ProductGalery" asp-action="Fundamenty">
+                            <i class="fab fa-sketch"></i>
+                            Фундамент
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class=" contect_contact my-5 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div class="contact text-center py-5">
+                    <ul>
+                        Наші послуги:
+                        <li class="contact_item p-2"><i class="fas fa-pencil-ruler p-2"></i>Заміри</li>
+                        <li class="contact_item p-2"><i class="fas fa-drafting-compass p-2"></i>Виготовлення</li>
+                        <li class="contact_item p-2"><i class="fas fa-truck-loading p-2"></i>Доставка</li>
+                        <li class="contact_item" p-2><i class="fas fa-ruler-combined p-2"></i>Монтаж</li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+            <div class="contect_contact my-5 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                <div class="h_work text-center py-5">
+                    <ul>
+                        Переваги нашої продукції:
+                        <li class="h_work_item p-2"><i class="fas fa-mountain p-2"></i>Полірованні і термо-обробленні поверхні</li>
+                        <li class="h_work_item p-2"><i class="fas fa-palette p-2"></i>Візерунки які створенні природою</li>
+                        <li class="h_work_item p-2"><i class="fas fa-recycle p-2"></i>100% екологічний камінь</li>
+                        <li class="h_work_item p-2"><i class="fas fa-tools p-2"></i>Вічний термін служби</li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="content col-12 text-center">
+            <h6>Наші гарантії:</h6>
+        </div>
+        <div class="row m-5">
+            <ul class="guarantee text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <li class="guarantee_item"> <i class="far fa-check-circle p-1"></i>Якості</li>
+                <p1>Ми працюємо тільки з якісною сировиною, здобутим в кращих кар'єрах.</p1>
+            </ul>
+            <ul class="guarantee text-center col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <li class="guarantee_item"> <i class="far fa-check-circle p-1"></i>Заміни</li>
+                <p1>Ми швидко замінимо бракований або пошкодженний під час перевезення виріб</p1>
+            </ul>
+            <ul class="guarantee text-center col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                <li class="guarantee_item"> <i class="far fa-check-circle p-1"></i>Ціни</li>
+                <p1>Ми пропонуємо кращу ціну! Знайдете ціну нижче - напишіть нам, і ми зробимо Вам більш вигідну пропозицію.</p1>
+            </ul>
+        </div>
+    </div>
+</section>
